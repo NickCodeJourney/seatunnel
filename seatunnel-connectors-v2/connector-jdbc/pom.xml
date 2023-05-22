@@ -42,7 +42,7 @@
         <teradata.version>17.20.00.12</teradata.version>
         <redshift.version>2.1.0.9</redshift.version>
         <saphana.version>2.14.7</saphana.version>
-        <kingbase8.version>8.2.0</kingbase8.version>
+        <kingbase8.version>8.6.0</kingbase8.version>
     </properties>
 
     <dependencyManagement>
@@ -134,10 +134,6 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.kingbase8</groupId>
-            <artifactId>kingbase8</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.apache.seatunnel</groupId>
             <artifactId>connector-common</artifactId>
             <version>${project.version}</version>
@@ -193,6 +189,10 @@
         <dependency>
             <groupId>com.sap.cloud.db.jdbc</groupId>
             <artifactId>ngdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.com.kingbase</groupId>
+            <artifactId>kingbase8</artifactId>
         </dependency>
     </dependencies>
 </project>
